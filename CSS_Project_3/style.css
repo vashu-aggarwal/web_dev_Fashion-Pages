@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#nav-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.gola{
+    height: 22px;
+    width: 22px;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#nav-2 h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+#nav h5{
+    display: none;
+}
+#nav-2 h4 span{
+    color: rgb(128, 128, 133);
+    margin-left: 25px;
+}
+#nav2{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0 50px;
+    /* background-color: red; */
+}
+#nav2 h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 150px);
+    /* background-color: aqua */
+}
+#text-content{
+    width: 100%;
+    height: 40%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-wrap: nowrap;
+    /* make a scroller on this div only not on whole page */
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    /* font-size: 130px; */
+    font-size: 7vw;
+    font-weight: 300;
+}
+#image-content{
+    height: 60%;
+    width: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    overflow-x: auto;
+
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:600px){
+    #nav{
+
+        height: 70px;
+   
+        padding: 0 25px;
+    }
+   
+    #nav-1{
+        gap: 0px;
+    }
+    .gola{
+        height: 16px;
+        width: 16px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    #nav-2{
+        align-items: center;
+        gap: 30px;
+    }
+    #nav h5{
+        display: initial;
+    }
+    #nav h5 i{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #nav-2 h4{
+        font-size: 15px;
+        font-weight: 600;
+        display: none;
+    }
+    #nav-2 h4:nth-child(1){
+        display: initial;
+        margin-right: 25px;
+    }
+    #nav-2 h4 span{
+        color: rgb(128, 128, 133);
+        margin-left: 10px;
+    }
+    
+
+    #nav2{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0 10px;
+        /* background-color: red; */
+    }
+    #nav2 h3{
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #5d5d5d;
+    }
+    
+
+
+    #content{
+        width: 100%;
+        height: calc(100% - 140px);
+        /* background-color: aqua */
+    }
+    #text-content{
+        width: 100%;
+        height: 35%;
+        /* background-color: burlywood; */
+        display: flex;
+        
+        /* make a scroller on this div only not on whole page */
+        overflow-x: auto;
+    }
+    #text-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 5px;
+    }
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: fit-content;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .elem h1{
+        /* font-size: 130px; */
+        font-size: 24vw;
+        white-space: nowrap;
+        font-weight: 300;
+    }
+    #image-content{
+        height: 65%;
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        overflow-x: auto;
+    
+    }
+    #image-content::-webkit-scrollbar{
+        display: none;
+    }
+    #image-content img{
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
